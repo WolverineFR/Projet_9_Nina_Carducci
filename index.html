@@ -5,22 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
-    />
     <meta charset="UTF-8" name="description" content="Texte ici à voir" />
+    <!-- meta données -->
+    <meta property="og:title" content="Nina Carducci">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="(mettre liens image ici)">
+    <meta name="twitter:card" content="(image à afficher)">
     <!-- ajout du meta (voir pour le contenu du texte) -->
-    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
+
     <title>Nina Carducci</title>
     <!-- ajout d'une balise titre dans le head -->
   </head>
@@ -40,7 +32,7 @@
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               aria-label="En savoir plus sur Nina"
               target="_blank"
-              ><img src="assets/images/instagram.png" alt="Instagram logo"
+              ><img class="logo_insta" src="assets/images/instagram.png" alt="Instagram logo"
             /></a>
           </li>
         </ul>
@@ -78,21 +70,21 @@
           <div class="carousel-item active">
             <!-- ajout de alt -->
             <img
-              src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg"
-              class="d-block w-100"
+              srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp, ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_small.webp"
+              class="d-block w-100 img_iwata"
               alt="Ryoji Iwata"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg"
+              srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp, ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_small.webp"
               class="d-block w-100"
               alt="Nicholas Green"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg"
+              srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp, ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_small.webp"
               class="d-block w-100"
               alt="Edward Cisneros"
             />
@@ -120,7 +112,7 @@
     </div>
     <div id="about">
       <div class="picture left">
-        <img src="./assets/images/nina.png" alt="Photo de Nina" />
+        <img class="nina_img" srcset="./assets/images/nina.webp, ./assets/images/nina_small.webp" alt="Photo de Nina" />
         <!-- ajout du alt sous la photo -->
       </div>
       <div id="about-me">
@@ -150,56 +142,56 @@
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"
+            srcset="./assets/images/gallery/concerts/aaron-paul-wnx-fxzb6cw-unsplash.webp, ./assets/images/gallery/concerts/aaron-paul-wnx-fxzb6cw-unsplash_small.webp"
             alt="Aaron paul concert"
           />
           <!-- ajout du alt (voir pour referencement naturel) -->
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
+            srcset="./assets/images/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unsplash-65c9e108ca888.webp, ./assets/images/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unsplash-65c9e108ca888_small.webp/"
             alt="Aaron paul concert"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"
+            srcset="./assets/images/gallery/entreprise/jason-goodman-tho1-oukbg0-unsplash-65c9e108de9ba.webp, ./assets/images/gallery/entreprise/jason-goodman-tho1-oukbg0-unsplash-65c9e108de9ba_small.webp"
             alt="Jason Goodman"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
-            src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
+            srcset="./assets/images/gallery/mariage/hannah-busing-rvf2r-qmprk-unsplash-65c9e10305e44.webp, ./assets/images/gallery/mariage/hannah-busing-rvf2r-qmprk-unsplash-65c9e10305e44_small.webp"
             alt="Hannah Busing"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
+            srcset="./assets/images/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash-65c9e0f53d6f4.webp, ./assets/images/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash-65c9e0f53d6f4_small.webp"
             alt="Ade Tunji"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
-            src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
+            srcset="./assets/images/gallery/mariage/jakob-owens-siniljkxhmc-unsplash-65c9e103060a8.webp, ./assets/images/gallery/mariage/jakob-owens-siniljkxhmc-unsplash-65c9e103060a8_small.webp"
             alt="Jakob Owens"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"
+            srcset="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1ur-8-unsplash-65c9e0f54af64.webp, ./assets/images/gallery/portraits/nino-van-prattenburg-443cl1ur-8-unsplash-65c9e0f54af64_small.webp"
             alt="Nino Van Prattenburg"
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"
+            srcset="./assets/images/gallery/concerts/austin-neill-hgO1wfpxl3i-unsplash.webp, ./assets/images/gallery/concerts/austin-neill-hgO1wfpxl3i-unsplash_small.webp"
             alt="Austin Neill"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"
+            srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-fsgzm8n0hiy-unsplash-65c9e109d0521.webp, ./assets/images/gallery/entreprise/mateus-campos-felipe-fsgzm8n0hiy-unsplash-65c9e109d0521_small.webp"
             alt="Mateus campos felipe"
           />
         </div>
@@ -301,10 +293,18 @@
           </form>
         </div>
         <div class="picture right">
-          <img src="./assets/images/camera.png" alt="camera" />
+          <img class="img_camera" srcset="./assets/images/camera.webp, ./assets/images/camera_small.webp" alt="camera" />
           <!-- ajout du alt -->
         </div>
       </div>
     </div>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/maugallery.min.js"></script>
+    <script src="./assets/scripts.min.js"></script>
   </body>
 </html>
