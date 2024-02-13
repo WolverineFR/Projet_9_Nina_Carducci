@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <!-- ajout du lang fr -->
+  <!-- ajout du language fr -->
   <head>
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style.min.css" />
+
+    <!-- ajout de preconnect pour fonts gstatic -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
     <meta charset="UTF-8" name="description" content="Texte ici à voir" />
     <!-- meta données -->
     <meta property="og:title" content="Nina Carducci">
     <meta property="og:type" content="website">
     <meta property="og:image" content="(mettre liens image ici)">
     <meta name="twitter:card" content="(image à afficher)">
-    <!-- ajout du meta (voir pour le contenu du texte) -->
-
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/maugallery.min.js"></script>
+    <script src="./assets/scripts.min.js"></script>
+    
     <title>Nina Carducci</title>
     <!-- ajout d'une balise titre dans le head -->
   </head>
   <body>
     <div class="top-header">
-      <h1 class="name">Nina Carducci</h1>
+      <h1 class="title_name">Nina Carducci</h1>
       <!-- remplacement h3 par h1 -->
       <div class="nav">
         <ul>
@@ -115,7 +126,7 @@
         <img class="nina_img" srcset="./assets/images/nina.webp, ./assets/images/nina_small.webp" alt="Photo de Nina" />
         <!-- ajout du alt sous la photo -->
       </div>
-      <div id="about-me">
+      <div class="about-me" id="about-me">
         <h2 class="about-me__title">A propos de moi</h2>
         <h3 class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
@@ -123,7 +134,7 @@
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
         </h3>
         <!-- modification de h3 et h6 en h2 et h3 -->
-        <p>
+        <p class="about-me__texte">
           Nous passons notre vie à chercher le bonheur, et lorsque nous y
           touchons, nous n’avons qu’une envie : le figer au travers de
           photographies pour le savourer avec les personnes qui sont importantes
@@ -298,13 +309,5 @@
         </div>
       </div>
     </div>
-    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/maugallery.min.js"></script>
-    <script src="./assets/scripts.min.js"></script>
   </body>
 </html>

@@ -271,6 +271,10 @@ body {
   height: 552;
 }
 
+.title_name {
+  font-size: 26px;
+}
+
 #about {
   display: flex;
   background-color: #f6d2b8;
@@ -302,6 +306,12 @@ body {
 #about-me {
   flex: 2;
   font-size: 14px;
+  width: 500;
+  height: 300;
+
+  p {
+    width: 80;
+  }
 }
 .about-me__title {
   margin-top: 1em;
@@ -322,6 +332,7 @@ body {
 
 #gallery {
   min-height: 100vh;
+
 }
 .title {
   text-align: center;
@@ -481,6 +492,8 @@ input[type="submit"] {
   #about,
   #contact .container {
     align-items: center;
+    height: 500;
+    width: 500;
   }
   .about-me__title {
     margin-top: 0;
