@@ -256,20 +256,6 @@ body {
   height: 20px;
 }
 
-.nina_img {
-  width: 554;
-  height: 552;
-}
-
-.img_iwata {
-  height: 888;
-  width: 1920;
-}
-
-.img_camera {
-  width: 554;
-  height: 552;
-}
 
 .title_name {
   font-size: 26px;
@@ -306,12 +292,6 @@ body {
 #about-me {
   flex: 2;
   font-size: 14px;
-  width: 500;
-  height: 300;
-
-  p {
-    width: 80;
-  }
 }
 .about-me__title {
   margin-top: 1em;
